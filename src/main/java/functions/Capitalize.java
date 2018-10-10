@@ -3,10 +3,11 @@ package functions;
 import java.util.function.Function;
 
 import org.apache.commons.text.WordUtils;
+import reactor.core.publisher.Flux;
 
-public class Capitalize implements Function<String, String> {
+public class Capitalize implements Function<Flux<String>, Flux<String>> {
 
-	public String apply(String s) {
-		return WordUtils.capitalizeFully(s);
+	public Flux<String> apply(Flux<String> in) {
+		return in.map(s -> WordUtils.capitalizeFully(s));
 	}
 }
