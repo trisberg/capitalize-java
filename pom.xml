@@ -42,12 +42,12 @@
 						</goals>
 						<configuration>
 							<createDependencyReducedPom>false</createDependencyReducedPom>
-							<artifactSet>
-								<excludes>
-									<exclude>io.projectreactor:reactor-core</exclude>
-									<exclude>org.reactivestreams:reactive-streams</exclude>
-								</excludes>
-							</artifactSet>
+							<!--<artifactSet>-->
+								<!--<excludes>-->
+									<!--<exclude>io.projectreactor:reactor-core</exclude>-->
+									<!--<exclude>org.reactivestreams:reactive-streams</exclude>-->
+								<!--</excludes>-->
+							<!--</artifactSet>-->
 						</configuration>
 					</execution>
 				</executions>
