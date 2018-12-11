@@ -1,1 +1,2 @@
 handler = "functions.Capitalize"
+artifact = "/workspace/app/target/capitalize-java-0.0.1.jar"
